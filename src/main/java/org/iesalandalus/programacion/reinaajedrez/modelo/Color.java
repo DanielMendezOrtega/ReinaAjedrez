@@ -12,6 +12,10 @@ public enum Color {
 		this.cadenaMostrar = cadenaMostrar;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("El color es=%s, cadenaMostrar");
+	}
 	
 	
 	
