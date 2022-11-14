@@ -8,13 +8,14 @@ public enum Color {
 	
 	
 
-	private Color(String cadenaMostrar) {
-		this.cadenaMostrar = cadenaMostrar;
+	private Color(String colorReina ) {
+		this.cadenaMostrar=colorReina;
+		
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("El color es=%s, cadenaMostrar");
+		return String.format(cadenaMostrar);
 	}
 	
 	
