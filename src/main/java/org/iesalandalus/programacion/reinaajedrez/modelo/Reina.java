@@ -5,15 +5,25 @@ public class Reina {
 	private Posicion posicion;
 	
 	
-	public void Reina () {
-		color=Color.BLANCO;	
+	public Reina () {
+		setColor(Color.BLANCO);	
+		setPosicion(new Posicion(1, 'd')); 
 	}
 	
-	
+	public Reina(Color color) {
+		setColor(color);
+	}
+
+
+
 	public Color getColor() {
 		return color;
 	}
 	public void setColor(Color color) {
+	if (color != Color.BLANCO & color != Color.NEGRO) {
+			throw new IllegalArgumentException("ERROR:color no esperado.");
+		}
+		
 		this.color = color;
 	}	
 

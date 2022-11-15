@@ -1,14 +1,19 @@
 package org.iesalandalus.programacion.reinaajedrez.modelo;
 
+import java.nio.charset.CoderMalfunctionError;
+
 public class Main {
 
 	public static void main(String[] args) {
-		Posicion posicion1 = new Posicion(0, 0);
-		Posicion posicion2 = new Posicion(posicion1);
+	
+		Reina reinaBlanca1 = new Reina();
+		System.out.println(reinaBlanca1.getColor());
+		System.out.println(reinaBlanca1.getPosicion());
 		
-		System.out.println(posicion2.getFila());
-		System.out.println(posicion2.getColumna());
-
+	
+		
+		
+		
 	}
 
 }
