@@ -14,10 +14,11 @@ public class Posicion {
 	
 	public Posicion(Posicion posicion) {
 		if (posicion == null) {
-			throw new NullPointerException("No puedo copiar una posición nula.");
+			throw new NullPointerException("ERROR: No es posible copiar una posición nula.");
 		}
 		fila = posicion.getFila();
 		columna = posicion.getColumna();
+		posicion = new Posicion(getFila(), getColumna());
 	}
 	
 
@@ -26,10 +27,12 @@ public class Posicion {
 	}
 
 	public void setFila(int fila) {
-		if (fila < 2 | fila >8) {			
-			throw new IllegalArgumentException("ERROR: Fila no valida.");
-		}
 		
+		if (fila < 1 ){			
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
+		}else if (fila > 8) {
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
+		}
 		this.fila = fila;
 	}
 
@@ -38,10 +41,11 @@ public class Posicion {
 	}
 
 	public void setColumna(char columna) {
-		if (columna > 'h') {
-			throw new IllegalArgumentException("ERROR: Columna no valida.");
+		if (columna < 'a') {
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
+		}else if(columna > 'h') {
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		}
-		
 		this.columna = columna;
 	}
 
