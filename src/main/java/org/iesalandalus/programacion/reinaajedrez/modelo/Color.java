@@ -8,12 +8,9 @@ public enum Color {
 
 	private Color(String colorReina) {
 		this.cadenaMostrar = colorReina;
-
+	
 	}
-
-	@Override
-	public String toString() {
-		return String.format(cadenaMostrar);
-	}
-
+	
+	
+	
 }
