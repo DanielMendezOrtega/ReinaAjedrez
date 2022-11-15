@@ -26,7 +26,7 @@ public class Posicion {
 		return fila;
 	}
 
-	public void setFila(int fila) {
+	private void setFila(int fila) {
 		
 		if (fila < 1 | fila > 8){			
 			throw new IllegalArgumentException("ERROR: Fila no válida.");
@@ -38,7 +38,7 @@ public class Posicion {
 		return columna;
 	}
 
-	public void setColumna(char columna) {
+	private void setColumna(char columna) {
 		if (columna < 'a'| columna > 'h') {
 			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		}
