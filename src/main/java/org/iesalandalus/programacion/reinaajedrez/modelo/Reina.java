@@ -13,7 +13,16 @@ public class Reina {
 	public Reina(Color color) {
 		setColor(color);
 	}
-
+	
+	public void colorReina(Color color){
+		if(color == Color.BLANCO) {
+			setColor(Color.BLANCO);
+			setPosicion(new Posicion(1, 'd')); 
+		}else if (color == Color.NEGRO) {
+			setColor(Color.NEGRO);
+			setPosicion(new Posicion(8, 'd')); 
+		}
+	}
 
 
 	public Color getColor() {

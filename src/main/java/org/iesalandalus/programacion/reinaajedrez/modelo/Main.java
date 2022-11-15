@@ -7,9 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 	
 		Reina reinaBlanca1 = new Reina();
-		System.out.println(reinaBlanca1.getColor());
+		reinaBlanca1.colorReina(Color.NEGRO);
 		System.out.println(reinaBlanca1.getPosicion());
-		
 	
 		
 		
