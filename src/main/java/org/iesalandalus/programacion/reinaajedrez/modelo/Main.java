@@ -15,7 +15,7 @@ public class Main {
 		
 		
 		
-	try {
+	/*try {
 	
 	
 		Reina reinaBlanca1 = new Reina();
@@ -32,7 +32,9 @@ public class Main {
 	}
 	catch(OperationNotSupportedException e) {
 		System.out.println(e.getMessage());
-	}
+	}  */
+		
+		
 	}
 
 }

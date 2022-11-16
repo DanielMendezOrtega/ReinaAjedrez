@@ -7,6 +7,7 @@ public class Consola {
 	int opcion;
 	String colorDeFicha;
 	int direccion;
+	int numPasos;
 
 	private static void consola() {
 
@@ -90,6 +91,11 @@ public class Consola {
 			System.out.println("Ha elegido la direccion SUROESTE");
 			break;
 		}
-
 	}
+	
+	public void elegirPasos() {
+		System.out.println("Elige el numero de pasos a mover");
+		numPasos=Entrada.entero();
+	}
+	
 }
