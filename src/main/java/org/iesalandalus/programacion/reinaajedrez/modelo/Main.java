@@ -11,6 +11,7 @@ public class Main {
 		Consola Co = new Consola();
 		Co.mostrarMenu();
 		Co.mostrarMenuDirecciones();
+		Co.elegirDireccion();
 		
 		
 		
