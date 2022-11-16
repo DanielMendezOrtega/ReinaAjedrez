@@ -10,7 +10,7 @@ public class Main {
 		
 		Consola Co = new Consola();
 		Co.mostrarMenu();
-		Co.elegirOpcionMenu();
+		Co.elegirOpcion();
 		
 		
 		

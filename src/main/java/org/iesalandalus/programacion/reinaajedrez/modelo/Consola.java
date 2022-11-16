@@ -5,6 +5,7 @@ import org.iesalandalus.programacion.utilidades.Entrada;
 public class Consola {
 	
 	int opcion;
+	String colorDeFicha;
 	
 	
 	private static void consola() {
@@ -33,6 +34,14 @@ public class Consola {
 
 	}
 	
+	public void elegirOpcion() {
+		do {
+			System.out.println("Elige un color de ficha");
+			colorDeFicha = Entrada.cadena();
+	
+		}while (colorDeFicha != "blanco" || colorDeFicha != "negro");
+		System.out.println("Ha elegido el color " + colorDeFicha);
+	}
 
 
 
