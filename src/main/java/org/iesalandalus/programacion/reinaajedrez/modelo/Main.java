@@ -10,6 +10,7 @@ public class Main {
 		
 		Consola Co = new Consola();
 		Co.mostrarMenu();
+		Co.elegirOpcionMenu();
 		
 		
 		
@@ -21,11 +22,11 @@ public class Main {
 		System.out.println(reinaBlanca1.getPosicion());
 		reinaBlanca1.mover(Direccion.SUR ,1);
 		System.out.println(reinaBlanca1.getPosicion());
-		reinaBlanca1.mover(Direccion.NORTE, 6);
+		reinaBlanca1.mover(Direccion.NORTE, 2);
 		System.out.println(reinaBlanca1.getPosicion());
 		reinaBlanca1.mover(Direccion.SUR, 2);
 		System.out.println(reinaBlanca1.getPosicion());
-		reinaBlanca1.mover(Direccion.ESTE, 2);
+		reinaBlanca1.mover(Direccion.ESTE, 1);
 		System.out.println(reinaBlanca1.getPosicion());
 	}
 	catch(OperationNotSupportedException e) {
