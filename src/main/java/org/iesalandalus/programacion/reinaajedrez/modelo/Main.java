@@ -7,8 +7,14 @@ import javax.naming.OperationNotSupportedException;
 public class Main {
 
 	public static void main(String[] args) {
-	try {
 		
+		Consola Co = new Consola();
+		Co.mostrarMenu();
+		
+		
+		
+	try {
+	
 	
 		Reina reinaBlanca1 = new Reina();
 		reinaBlanca1.setColor(Color.BLANCO);
