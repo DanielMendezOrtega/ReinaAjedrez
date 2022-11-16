@@ -12,6 +12,7 @@ public class Main {
 		Co.mostrarMenu();
 		Co.mostrarMenuDirecciones();
 		Co.elegirDireccion();
+		Co.despedirse();
 		
 		
 		
