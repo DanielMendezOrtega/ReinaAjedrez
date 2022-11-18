@@ -8,7 +8,7 @@ public class Reina {
 	int pasos = 0;
 	int auxFila = 0;
 	char auxColumna;
-
+	
 	public Reina() {
 		setColor(Color.BLANCO);
 		setPosicion(new Posicion(1, 'd'));
@@ -17,13 +17,10 @@ public class Reina {
 	public Reina(Color color) {
 		setColor(color);
 	}
-
-
 	public Color getColor() {
 		return color;
 	}
-
-	public void setColor(Color color) {
+	private void setColor(Color color) {
 		
 		if (color ==null ){
 			throw new NullPointerException("ERROR: El color no puede ser nulo.");
@@ -60,12 +57,10 @@ public class Reina {
 				auxFila = (posicion.getFila() +pasos);
 				setPosicion(new Posicion(auxFila, posicion.getColumna()));
 				break;
-			
 			case NORESTE:
 				auxFila = (posicion.getFila() +pasos);
 				auxColumna = (char)(posicion.getColumna() +pasos);
 				setPosicion(new Posicion(auxFila, auxColumna));
-				
 				break;
 			case ESTE:
 				auxColumna = (char)(posicion.getColumna() +pasos);
